@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/" },
+    { "source": "/about", "destination": "/" },
+    { "source": "/contact", "destination": "/" },
+    { "source": "/image_editor", "destination": "/" },
+    { "source": "/dummy_work", "destination": "/" },
+    { "source": "/checkout", "destination": "/" },
+    { "source": "/testing", "destination": "/" },
+    { "source": "/login", "destination": "/" },
+    { "source": "/sign-up", "destination": "/" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
