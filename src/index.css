@@ -1,0 +1,130 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+/* <div class="e-toolbar-item e-image-upload "><div class="e-upload e-control-wrapper e-lib e-keyboard" tabindex="0" data-tabindex="-1"><div class="e-file-select-wrap"><button class="e-tbar-btn e-tbtn-txt top-icon" type="button" tabindex="0" title="Browse..."><span class="e-btn-icon e-icons e-upload-icon e-icon-left"></span></button><span class="e-file-select"><input id="ej2-image-editor_0_upload" class="e-control e-uploader e-lib" name="ej2-image-editor_0_upload" type="file" aria-label="Uploader" tabindex="-1" accept=".jpg, .jpeg, .png,.svg"></span><span class="e-file-drop">Or drop files here</span></div></div></div> */
+
+/* font-family: Open Sans, Arial, sans-serif; */
+
+.e-image-upload {
+  display: none !important;
+}
+/* .canvas-container {
+  position: absolute !important;
+  right: 43%;
+  bottom: 33%;
+  border: 10px;
+
+  border-color: black;
+  color: antiquewhite !important;
+} */
+
+.canvas-container2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid black; */
+}
+/* #front-canvas {
+  border: 1px solid black;
+  top: 155px !important;
+  position: absolute;
+} */
+/* #back-canvas {
+  border: 1px solid black;
+  top: -120px !important;
+} */
+
+@keyframes imageLoad {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* .animate-imageLoad {
+  animation: imageLoad 0.8s ease-in-out;
+} */
+
+/* Slide left animation */
+@keyframes slideSlowlyToLeft {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slideSlowly {
+  animation: slideSlowlyToLeft 0.7s linear; /* Adjust the duration for speed */
+}
